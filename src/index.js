@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import Hello from './Hello';
 import Time from './Time';
 import Condition from './Condition';
-
+import List from './List';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 function tick(){
   root.render(
@@ -11,6 +11,7 @@ function tick(){
        <Hello/>
        <Time/>
        <Condition/>
+       <List/>
     </div>
  );
 }
