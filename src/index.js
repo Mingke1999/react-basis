@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Time from './Time';
-import State from './State';
-
+import Event from './Event';
 var details ={
   title : "Details Page",
   desc : "description",
@@ -18,8 +17,9 @@ function tick(){
     <div>
       <Time/>
       {/*<Props title={details.title} desc={details.desc} list={details.list}/>
-      <Props title={users.title} desc={users.desc}/>*/}
-      <State/>
+      <Props title={users.title} desc={users.desc}/>
+      <State/>*/}
+      <Event/>
     </div>
  );
 }
