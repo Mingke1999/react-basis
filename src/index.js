@@ -1,17 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Hello from './Hello';
 import Time from './Time';
-import Condition from './Condition';
-import List from './List';
+import Props from './Props';
+
+var details ={
+  title : "Details Page",
+  desc : "description",
+  list:["test1","test2"]
+}
+var users ={
+  title : "all users",
+  desc : "user list"
+}
 const root = ReactDOM.createRoot(document.getElementById('root'));
 function tick(){
   root.render(
     <div>
-       <Hello/>
-       <Time/>
-       <Condition/>
-       <List/>
+      <Time/>
+      <Props title={details.title} desc={details.desc} list={details.list}/>
+      <Props title={users.title} desc={users.desc}/>
     </div>
  );
 }
