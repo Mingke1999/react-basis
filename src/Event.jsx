@@ -25,7 +25,9 @@ export default class Event extends Component {
     console.log(ele)
     console.log(event)
   }
- 
+ eventFirst=(event)=>{
+    console.log(event)
+ }
   render() {
     return (
       <div>
@@ -51,7 +53,10 @@ export default class Event extends Component {
                 }
             </ol>
         </div>
-       
+       <div>
+        <button onClick={this.eventFirst}>eventFirst</button>
+        {/*event was set default as the first parameter*/}
+       </div>
       </div>
     )
   }
