@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 export default class LifeCycle extends Component {
    constructor(){
+    //constructor(porps)
         super();
         console.log("constructor")
         this.state = {
@@ -10,6 +11,7 @@ export default class LifeCycle extends Component {
    }
          
   static getDerivedStateFromProps(){
+    //getDerivedStateFromProps(props,state)
     console.log("before render:getDerivedStateFromProps")
     return null;
   }
@@ -18,14 +20,20 @@ export default class LifeCycle extends Component {
     console.log("render finished")
   }
   shouldComponentUpdate(){
+    //shouldComponentUpdate(nextProps,nextState)
+    //this.props == nextProps
+    //this.state == nextState
+    //.eg the search content current and before
     console.log("is it allowed to render:shouldComponentUpdate")
     return true;    //is it allowed to render
   }
   getSnapshotBeforeUpdate(){
+    // getSnapshotBeforeUpdate(prevProps,PrevState)
     console.log("before uopdate:getSnapshotBeforeUpdate ")
-    return null;
+    return null; //snapshot-> componentDidUpdate()
   }
   componentDidUpdate(){
+    //componentDidUpdate(prevProps,PrevState,snapshot)
     console.log("updated: componentDidUpdate")
   }
   componentWillUnmount(){
