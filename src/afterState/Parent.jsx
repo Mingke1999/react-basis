@@ -11,7 +11,7 @@ export default class Parent extends Component {
    
     myFunc = (msg) =>{
         this.setState({
-            msg
+            msg:msg
         })
     }
 
