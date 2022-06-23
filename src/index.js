@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import FormPro from './FormPro';
+import Parent from './Parent';
+
 var details ={
   title : "Details Page",
   desc : "description",
@@ -13,7 +14,7 @@ var users ={
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
-    <FormPro/>
+  <Parent/>
     {/*<Props title={details.title} desc={details.desc} list={details.list}/>
     <Props title={users.title} desc={users.desc}/>
     <State/>*/}
