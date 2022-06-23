@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Event from './Event';
+import StateAsyn from './StateAsyn';
+
 var details ={
   title : "Details Page",
   desc : "description",
@@ -13,9 +14,9 @@ var users ={
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
+    <StateAsyn/>
     {/*<Props title={details.title} desc={details.desc} list={details.list}/>
     <Props title={users.title} desc={users.desc}/>
     <State/>*/}
-    <Event/>
   </div>
 );

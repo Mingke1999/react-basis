@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "./event.css"
+import "../css/event.css"
 export default class Event extends Component {
 
   constructor(){
