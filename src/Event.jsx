@@ -5,8 +5,10 @@ export default class Event extends Component {
   constructor(){
     super();
     this.state ={
-        flag:false
+        flag:false,
+        name:["Mingke","Tomcat","Shark"]
     }
+    //3. this.clickHandle = this.clickHandle.bind(this)
   }
   clickHandle = () =>{
     console.log("hello")
@@ -19,6 +21,11 @@ export default class Event extends Component {
             flag:!this.state.flag
         })
   }
+  listHandle=(ele,event)=>{
+    console.log(ele)
+    console.log(event)
+  }
+ 
   render() {
     return (
       <div>
@@ -27,11 +34,24 @@ export default class Event extends Component {
         {/**class->className */}
         <div className='box' onMouseMove={this.moveHandle}></div>
         <div>
-            <button onClick={this.flagHandle.bind(this)}>change flag</button>
+            <button onClick={this.flagHandle}>change flag</button>
             {
+            //()=>{} get this priority, or this.flagHandle.bind(this)
                 this.state.flag ? 'flagTrue':'flagFalse'
             }
         </div>
+        <div>
+            <ol>
+                {
+                    this.state.name.map((ele,index)=>{
+                        return <li key={index} onClick={(event)=>this.listHandle(ele,event)}>{ele}</li>
+                        //use this.listHandle means function call, so three names printed without click event
+                        //add one more ()=> so wait to one more click
+                    })
+                }
+            </ol>
+        </div>
+       
       </div>
     )
   }
