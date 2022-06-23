@@ -1,3 +1,5 @@
+ALL basic content already there, maybe need to polish some comment
+
 stage1: mounting
     constructor: initialise state
     static  getDerivedStateFromProps() after virtual DOM before the atual DOM      
