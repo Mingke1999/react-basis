@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Child from './Child'
 //props: parent->child
+//props passed to child could not only be value but functions
 export default class Parent extends Component {
     constructor(){
         super();

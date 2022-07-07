@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-
+/**
+ * The component render has different lifecycles
+ */
 export default class LifeCycle extends Component {
    constructor(){
     //constructor(porps)

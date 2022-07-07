@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
-
+/**
+ * By combination of DOM and state, make a dynamic form
+ * when the text has been changed, set value to state
+ * fetching state value and set it back to the input value
+ */
 export default class FormPro extends Component {
 constructor(){
     super();

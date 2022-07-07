@@ -4,6 +4,7 @@ export default class Props extends Component {
   render() {
     //const title = this.props.title;
     //const desc = this.props.desc;
+    //ES6 format 
     const {title,desc,list} = this.props;
     return (
       <div>

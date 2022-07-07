@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-
+/**
+ * List basically means json
+ */
 export default class List extends Component {
   render() {
     const banners={

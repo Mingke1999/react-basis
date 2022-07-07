@@ -1,5 +1,8 @@
 import React from 'react'
-
+/**
+ * jsx or js could be export and used as a single tag
+ * it must be named Capitalised Hello, Event, Abcd..
+ */
 export default class Hello extends React.Component{   //name must start with capital letter 
  render(){
   var names = ["Hello Jsx"];

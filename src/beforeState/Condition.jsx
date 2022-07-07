@@ -1,14 +1,18 @@
 import React, { Component } from 'react'
-
+/**
+ * react could use confitional statement to return different results
+ */
 export default class Condition extends Component {
-  render() {
+  render() {  //component rendering
     const flag = true;
     const msg ={
        // title:"a short message"
     }
-    return (
+    return (  //elements existing
       <div>
-        {flag ? "isflaged":"notflaged"}
+        { //to write js inside tag, to use {}
+          flag ? "isflaged":"notflaged" //trinomial operators
+        } 
         {
             msg.title ? //whether exit
             <p>{msg.title}</p>

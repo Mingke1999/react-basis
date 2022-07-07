@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import "../css/event.css"
+/**
+ * onClick is used to trigger handle functions to deal with events
+ */
 export default class Event extends Component {
-
   constructor(){
     super();
     this.state ={
@@ -25,7 +27,7 @@ export default class Event extends Component {
     console.log(ele)
     console.log(event)
   }
- eventFirst=(event)=>{
+  eventFirst=(event)=>{
     console.log(event)
  }
   render() {

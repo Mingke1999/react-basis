@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-
+/**
+ * React.createRef to grab value from DOM
+ */
 export default class UseDOM extends Component {
 constructor(){
     super();
